@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    background-color: #13DBB0;
+	position: relative;
+    height: 100vh;
+}
+.lang{
+    position:absolute;
+    opacity: 0.2;
+    right: 180px;
+    top: 125px;
+    width: 140px;
+	height:125px;
+}
+.logo{
+    position: absolute;
+    opacity: 0.5;
+    width: 115px;
+	height:125px;
+    left: 25px;
+    top: 90px;
+}
+.lang1{
+    position:absolute;
+    opacity: 0.6;
+    right: 850px;
+    bottom: 15px;
+    width: 100px;
+	height:95px;
+}
+.logo1{
+    position: absolute;
+    opacity: 0.6;
+    width: 95px;
+	height:95px;
+    right: 325px;
+    bottom: 30px;
+}
+.lang2{
+    position:absolute;
+    opacity: 0.4;
+    right: 1200px;
+    top: 225px;
+    width: 140px;
+	height:125px;
+}
+.logo2{
+    position: absolute;
+    opacity: 0.4;
+    width: 115px;
+	height:125px;
+    left: 925px;
+    top: 320px;
+}
+.lang3{
+    position:absolute;
+    right: 40px;
+    bottom: 125px;
+    width: 140px;
+	height:125px;
+}
+.logo3{
+    position: absolute;
+    opacity: 0.6;
+    width: 115px;
+	height:125px;
+    left: 125px;
+    bottom: 190px;
+}
+.sildeshow{
+    height: 210px;
+    overflow: hidden;
+    position: relative;
+}
+.symbols{
+    display: flex;
+    position: absolute;
+    animation: slideshow 50s linear infinite;
+    transform: translate3d(0, 0, 0);
+}
+.symbols > div{
+    font-family: 'Work Sans';
+    background-color:black;
+    margin: 2px;
+    font-weight: 500;
+    height: 210px;
+    opacity: 0.5;
+    color:#dcdcdc;
+    font-size:50px;
+    padding: 65px;
+}
+.head{
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+.head > img{
+    height: 110px;
+}
+.input{
+    position: relative;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50px;
+}
+.input > input{
+    position: relative;
+    width: 450px;
+    font-family: 'Work Sans';
+    height: 45px;
+    color: #dcdcdc;
+    border: none;
+    color: black;
+    font-size: 16px;
+    border-radius: 50px;
+}
+.input > input:focus{
+    outline: none;
+}
+.input > input[type="text"] {
+    box-sizing: border-box;
+    padding-left: 15px;
+}
+.input > a{
+    position: relative;
+    text-decoration: none;
+    color:#dcdcdc;
+    background-color: black;
+    font-size: 16px;
+    padding: 12px 28px;
+    border-radius: 50px;
+    right: 50px;
+    opacity: 0.95;
+    font-family: 'Work Sans';
+    font-weight: 600;
+}
+.input > a:hover{
+    padding: 13px 29px;
+    opacity: 1;
+    font-size: 17px;
+}
+@keyframes slideshow {
+    0%    { left: 0; }
+    100%  { left: -200%; }
+}
+@keyframes moveSlideshow {  
+    100% { 
+      -webkit-transform: translateX(-200%);  
+    }
+}
