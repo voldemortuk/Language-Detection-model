@@ -11,3 +11,6 @@ Contains primarily cleaned files devoid of punctuaion and numerics of :
 - French
 - German 
 - Greek
+- Hungarian
+- Italian
+- Latvian
